@@ -4,7 +4,7 @@
   "description": "Project regarding first sprint in Acamica frontend Program course.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/BrianBernal/PodcastChanel/issues"
   },
-  "homepage": "https://github.com/BrianBernal/PodcastChanel#readme"
+  "homepage": "https://github.com/BrianBernal/PodcastChanel#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
