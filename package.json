@@ -1,0 +1,25 @@
+{
+  "name": "podcast-chanel",
+  "version": "1.0.0",
+  "description": "Project regarding first sprint in Acamica frontend Program course.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrianBernal/PodcastChanel.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Responsive",
+    "Design"
+  ],
+  "author": "Brian Bernal Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrianBernal/PodcastChanel/issues"
+  },
+  "homepage": "https://github.com/BrianBernal/PodcastChanel#readme"
+}
