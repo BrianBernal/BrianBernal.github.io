@@ -1,0 +1,36 @@
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* First Section */
+section.hello {
+  margin: 0 1rem;
+}
+
+.p-intro {
+  max-width: 628px;
+}
+
+.p-intro .mobile {
+  display: none;
+}
+
+.world {
+  text-decoration: line-through;
+}
+
+.dot {
+  color: var(--dark-color);
+}
+
+@media (max-width: 571px){
+  .p-intro .desktop {
+    display: none;
+  }
+
+  .p-intro .mobile {
+    display: initial;
+  }
+}
+/* End */

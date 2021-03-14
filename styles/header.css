@@ -1,35 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 16px;
-  box-sizing: border-box;
-  color: #000;
-}
-
-:root {
-  --main-color: #000;
-  --second-color: #fff;
-  --dark-color: #0000EC;
-  --light-color: #00F3BB;
-  --header-height: 44px;
-}
-
-h1 {
-  margin: 2rem 1rem;
-}
-
-a {
-  text-decoration: none;
-}
-
-.main-container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 header {
   display: flex;
   justify-content: space-between;
@@ -58,23 +26,27 @@ header {
 
 #hamburger-input:checked ~ .hamburger .l-middle {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity var(--transition-delay) ease;
 }
 
 .l-top, .l-bottom {
-  transition: top, transform 0.5s;
+  transition: top, transform var(--transition-delay);
+}
+
+.l-middle {
+  transition: opacity var(--transition-delay);
 }
 
 #hamburger-input:checked ~ .hamburger .l-top {
   transform: rotate(45deg);
   top: 5px;
-  /* transition: top, transform 0.5s; */
+  /* transition: top, transform var(--transition-delay); */
 }
 
 #hamburger-input:checked ~ .hamburger .l-bottom {
   transform: rotate(-45deg);
   top: -5px;
-  /* transition: top, transform 0.5s; */
+  /* transition: top, transform var(--transition-delay); */
 }
 
 #hamburger-input:checked ~ .nav-list-mobile {
@@ -92,7 +64,7 @@ header {
 .nav-list-mobile {
   display: none;
   transform: translateX(100%);
-  transition: transform 0.4s;
+  transition: transform var(--transition-delay);
 }
 
 .nav-mobile label:hover {
