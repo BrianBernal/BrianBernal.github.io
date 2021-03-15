@@ -1,6 +1,11 @@
 .main-container {
-  max-width: 1200px;
+  max-width: calc(1240px - 1rem);
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section {
+  padding: 7rem 5rem;
 }
 
 /* First Section */
@@ -10,6 +15,7 @@ section.hello {
 
 .p-intro {
   max-width: 628px;
+  margin-top: 1rem;
 }
 
 .p-intro .mobile {
@@ -24,13 +30,29 @@ section.hello {
   color: var(--dark-color);
 }
 
+.main-button {
+  margin-top: 1rem;
+}
+
 @media (max-width: 571px){
+  section {
+    padding: 0;
+  }
+
+  section.hello {
+    margin-top: 2rem;
+  }
+
   .p-intro .desktop {
     display: none;
   }
 
   .p-intro .mobile {
     display: initial;
+  }
+
+  .dot {
+    color: inherit;
   }
 }
 /* End */
