@@ -6,6 +6,7 @@ header {
   padding: 3rem 0;
   padding-bottom: 0;
   background-color: var(--second-color);
+  max-width: 1240px;
 }
 
 /* Mobile Menu */
@@ -54,7 +55,7 @@ header {
 }
 
 #hamburger-input:checked ~ .nav-list-mobile {
-  transform: translateX(-1rem);
+  transform: translateX(0);
 }
 
 .nav-list a{
@@ -115,7 +116,7 @@ header {
   background: #00F3BB;
 }
 
-@media screen and (max-width: 571px) {
+@media screen and (max-width: 603px) {
   header {
     padding-top: 1rem;
   }

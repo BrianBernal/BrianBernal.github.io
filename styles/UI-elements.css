@@ -21,13 +21,25 @@
   --text-color-active: rgba(6,10,36,0.56);
 }
 
+section, header, section, footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 h1 {
   margin: 1rem 0;
   font-size: 64px;
   letter-spacing: 0;
   font-weight: 400;
-  font-family: 'IBM Plex Sans', sans-serif;
   max-width: 85vw;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 p {
@@ -67,12 +79,16 @@ button:hover {
 }
 
 
-@media (max-width: 571px){
+@media (max-width: 603px){
   * {
     font-size: 14px;
   }
 
   h1 {
+    font-size: 36px;
+  }
+
+  h2 {
     font-size: 36px;
   }
 

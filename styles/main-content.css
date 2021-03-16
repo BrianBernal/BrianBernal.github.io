@@ -1,16 +1,25 @@
-.main-container {
-  max-width: calc(1240px - 1rem);
-  margin: 0 auto;
-  padding: 0 1rem;
+@media (max-width: 1300px) {
+  section, header, section, footer {
+    margin: 0 2rem;
+  }
 }
 
-section {
-  padding: 7rem 5rem;
+@media (max-width: 400px) {
+  section, header, section, footer {
+    margin: 0 1rem;
+  }
 }
 
 /* First Section */
 section.hello {
-  margin: 0 1rem;
+  margin-top: 10rem;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 800px) {
+  section.hello {
+    padding-left: 5rem;
+  }
 }
 
 .p-intro {
@@ -34,7 +43,7 @@ section.hello {
   margin-top: 1rem;
 }
 
-@media (max-width: 571px){
+@media (max-width: 603px){
   section {
     padding: 0;
   }
@@ -54,5 +63,15 @@ section.hello {
   .dot {
     color: inherit;
   }
+}
+/* End */
+
+/* Second Section */
+div.episodes-container {
+  background-color: var(--dark-color);
+}
+
+.title-episodes {
+  color: var(--second-color);
 }
 /* End */
