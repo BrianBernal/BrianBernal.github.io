@@ -15,19 +15,19 @@
   --second-color: #fff;
   --dark-color: #0000EC;
   --light-color: #00F3BB;
-  --header-height: 44px;
   --transition-delay: 0.3s;
   --text-color: #060A24;
   --text-color-active: rgba(6,10,36,0.56);
 }
 
 section, header, section, footer {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 48px;
 }
 
 p {

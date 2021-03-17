@@ -1,11 +1,11 @@
-@media (max-width: 1300px) {
-  section, header, section, footer {
-    margin: 0 2rem;
+@media (max-width: 1290px) {
+  header {
+    margin: 0 1rem;
   }
 }
 
-@media (max-width: 400px) {
-  section, header, section, footer {
+@media (max-width: 1050px) {
+  section, section, footer {
     margin: 0 1rem;
   }
 }
@@ -14,12 +14,6 @@
 section.hello {
   margin-top: 10rem;
   margin-bottom: 5px;
-}
-
-@media (min-width: 800px) {
-  section.hello {
-    padding-left: 5rem;
-  }
 }
 
 .p-intro {
@@ -50,6 +44,7 @@ section.hello {
 
   section.hello {
     margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   .p-intro .desktop {
@@ -69,9 +64,55 @@ section.hello {
 /* Second Section */
 div.episodes-container {
   background-color: var(--dark-color);
+  padding: 10rem 0;
+  clip-path: polygon(0 9rem, 100% 0, 100% calc(100% - 10rem), 0 100%);
 }
 
 .title-episodes {
   color: var(--second-color);
+  margin-bottom: 2rem;
 }
+
+div.episodes {
+  width: calc(100% + 240px);
+  transform: translateX(-120px);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.episodes iframe {
+  max-width: 584px;
+  width: 48%;
+  display: inline-block;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 1250px) {
+  div.episodes {
+    width: 100%;
+    transform: initial;
+  }
+
+  .episodes iframe {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 653px) {
+  .episodes iframe {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  div.episodes-container {
+    background-color: var(--dark-color);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
+  }
+}
+
 /* End */

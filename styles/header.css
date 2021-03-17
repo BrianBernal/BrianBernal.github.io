@@ -2,8 +2,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: var(--header-height);
-  padding: 3rem 0;
+  padding: 1.5rem 0;
   padding-bottom: 0;
   background-color: var(--second-color);
   max-width: 1240px;
