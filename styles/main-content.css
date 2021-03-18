@@ -56,10 +56,13 @@ section.hello {
 /* End */
 
 /* Second Section */
-div.episodes-container {
-  background-color: var(--dark-color);
+.bg-blue-container {
+  background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding: 10rem 0;
   clip-path: polygon(0 9rem, 100% 0, 100% calc(100% - 10rem), 0 100%);
+  width: 100vw;
+  margin: 0;
+  max-width: none;
 }
 
 .title-episodes {
@@ -80,32 +83,6 @@ div.episodes {
   width: 48%;
   display: inline-block;
   margin-bottom: 72px;
-}
-
-@media (max-width: 1250px) {
-  div.episodes {
-    width: 100%;
-    transform: initial;
-  }
-
-  .episodes iframe {
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media (max-width: 653px) {
-  .episodes iframe {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-  }
-  
-  div.episodes-container {
-    background-color: var(--dark-color);
-    padding-top: 4rem;
-    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
-  }
 }
 /* End */
 
@@ -181,6 +158,42 @@ section.topics-section h2 {
 }
 /* End */
 
+/* Sixth section */
+.novelties {
+  padding-bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  clip-path: polygon(0 9rem, 100% 0, 100% 100%, 0 100%);
+}
+
+.novelties h2 {
+  color: var(--second-color);
+  font-weight: 400;
+  margin: 2rem 0;
+}
+/* End */
+
+/* Footer */
+footer.footer {
+  padding: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-media-container img {
+  margin-right: 1.3rem;
+}
+
+.social-media-container img:last-child {
+  margin-right: 0;
+}
+/* End */
+
 @media (max-width: 1250px) {
   .phone-image {
     height: 519px;
@@ -227,5 +240,57 @@ section.topics-section h2 {
 @media (max-width: 500px) {
   .super-women img {
     width: 100vw;
+  }
+
+  footer.footer {
+    justify-content: space-around;
+  }
+
+  .footer p {
+    margin-bottom: 1rem;
+  }
+
+  .social-media-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-media-container img {
+    margin-right: 0;
+  }
+}
+
+
+@media (max-width: 1250px) {
+  div.episodes {
+    width: 100%;
+    transform: initial;
+  }
+
+  .episodes iframe {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 653px) {
+  .episodes iframe {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bg-blue-container {
+    padding-top: 4rem;
+    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
+  }
+
+  .novelties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(0 2rem, 100% 0, 100% 100%, 0 100%);
   }
 }

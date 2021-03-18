@@ -65,11 +65,13 @@ a:active {
 
 button {
   color: var(--text-color);
-  width: 216px;
-  height: 56px;
+  min-width: 216px;
+  min-height: 56px;
+  padding: 0 59px;
   background-color: var(--light-color);
   border: none;
   font-weight: 500;
+  font-size: 18px;
 }
 
 button:hover {
@@ -97,8 +99,9 @@ button:hover {
   }
 
   button {
-    width: 288px;
-    height: 48px;
+    width: auto;
+    min-height: 48px;
+    font-size: 16px;
   }
 }
 
