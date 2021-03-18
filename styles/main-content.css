@@ -128,14 +128,14 @@ section.where-section {
 /* End */
 
 /* Fourth section */
-section.guests {
+section.guests-section {
   max-width: none;
   width: 100vw;
   margin: 0;
   transform: translateY(-7rem);
 }
 
-.guests h2 {
+.guests-section h2 {
   width: auto;
   max-width: 1000px;
   margin-left: auto;
@@ -152,6 +152,34 @@ section.guests {
 .super-women img {
   width: 33.33vw;
 }
+/* End */
+
+/* Fifth section */
+section.topics-section h2 {
+  margin-top: 0;
+  transform: translateY(-3rem);
+}
+
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.topic {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.topic h3 {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+/* End */
 
 @media (max-width: 1250px) {
   .phone-image {
@@ -159,7 +187,7 @@ section.guests {
     transform: translateY(-7rem);
   }
 
-  section.guests {
+  section.guests-section {
     transform: translateY(-4rem);
   }
 }
@@ -179,6 +207,10 @@ section.guests {
   .super-women img {
     width: 50vw;
   }
+
+  .sections-container {
+    justify-content: space-around;
+  }
 }
 
 @media (max-width: 1050px) {
@@ -186,7 +218,7 @@ section.guests {
     margin: 0 1rem;
   }
 
-  .guests h2 {
+  .guests-section h2 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -197,4 +229,3 @@ section.guests {
     width: 100vw;
   }
 }
-/* End */
