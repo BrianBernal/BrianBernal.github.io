@@ -12,7 +12,7 @@
 
 /* First Section */
 section.hello {
-  margin-top: 10rem;
+  margin-top: 9rem;
   margin-bottom: 5px;
 }
 
@@ -110,8 +110,43 @@ div.episodes {
   div.episodes-container {
     background-color: var(--dark-color);
     padding-top: 4rem;
-    padding-bottom: 4rem;
     clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
+  }
+}
+/* End */
+
+/* Third Section */
+section.where-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1041px;
+}
+
+.phone-image {
+  height: 660px;
+  transform: translateY(-10.5rem);
+}
+
+.origin-article {
+  max-width: 464px;
+}
+
+@media (max-width: 1250px) {
+  .phone-image {
+    height: 519px;
+    transform: translateY(-7rem);
+  }
+}
+
+@media (max-width: 815px) {
+  .origin-article {
+    transform: translateY(-6rem);
+  }
+
+  .origin-article p {
+    margin-top: 0;
+    margin-bottom: 1rem;
   }
 }
 
