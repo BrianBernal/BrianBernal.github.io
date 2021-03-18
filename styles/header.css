@@ -124,6 +124,7 @@
     position: fixed;
     display: initial;
     width: 100%;
+    z-index: 99;
   }
 
   .nav-list {

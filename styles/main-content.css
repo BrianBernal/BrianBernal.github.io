@@ -60,7 +60,6 @@ section.hello {
   background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
   padding: 10rem 0;
   clip-path: polygon(0 9rem, 100% 0, 100% calc(100% - 10rem), 0 100%);
-  width: 100vw;
   margin: 0;
   max-width: none;
 }
@@ -107,7 +106,7 @@ section.where-section {
 /* Fourth section */
 section.guests-section {
   max-width: none;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   transform: translateY(-7rem);
 }
@@ -127,14 +126,15 @@ section.guests-section {
 }
 
 .super-women img {
-  width: 33.33vw;
+  width: 33.33%;
 }
 /* End */
 
 /* Fifth section */
 section.topics-section h2 {
   margin-top: 0;
-  transform: translateY(-3rem);
+  margin-bottom: 2rem;
+  transform: translateY(-2rem);
 }
 
 .sections-container {
@@ -187,6 +187,7 @@ footer.footer {
 
 .social-media-container img {
   margin-right: 1.3rem;
+  width: 18px;
 }
 
 .social-media-container img:last-child {
@@ -202,6 +203,11 @@ footer.footer {
 
   section.guests-section {
     transform: translateY(-4rem);
+  }
+
+  section.topics-section h2 {
+    margin-top: 0;
+    transform: translateY(-1rem);
   }
 }
 
