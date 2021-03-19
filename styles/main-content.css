@@ -1,9 +1,3 @@
-@media (max-width: 1290px) {
-  header {
-    margin: 0 1rem;
-  }
-}
-
 /* First Section */
 section.hello {
   margin-top: 9rem;
@@ -29,29 +23,6 @@ section.hello {
 
 .main-button {
   margin-top: 1rem;
-}
-
-@media (max-width: 603px){
-  section {
-    padding: 0;
-  }
-
-  section.hello {
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .p-intro .desktop {
-    display: none;
-  }
-
-  .p-intro .mobile {
-    display: initial;
-  }
-
-  .dot {
-    color: inherit;
-  }
 }
 /* End */
 
@@ -173,6 +144,10 @@ section.topics-section h2 {
   font-weight: 400;
   margin: 2rem 0;
 }
+
+.novelties button {
+  margin: 0 16px;
+}
 /* End */
 
 /* Footer */
@@ -211,6 +186,75 @@ footer.footer {
   }
 }
 
+@media (max-width: 500px) {
+  .super-women img {
+    width: 100vw;
+  }
+
+  footer.footer {
+    justify-content: space-around;
+  }
+
+  .footer p {
+    margin-bottom: 1rem;
+  }
+
+  .social-media-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .social-media-container img {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 603px){
+  section {
+    padding: 0;
+  }
+
+  section.hello {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .p-intro .desktop {
+    display: none;
+  }
+
+  .p-intro .mobile {
+    display: initial;
+  }
+
+  .dot {
+    color: inherit;
+  }
+}
+
+@media (max-width: 653px) {
+  .episodes iframe {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bg-blue-container {
+    padding-top: 4rem;
+    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
+  }
+
+  .novelties {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    clip-path: polygon(0 2rem, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
 @media (max-width: 815px) {
   .origin-article {
     transform: translateY(-6rem);
@@ -243,31 +287,6 @@ footer.footer {
   }
 }
 
-@media (max-width: 500px) {
-  .super-women img {
-    width: 100vw;
-  }
-
-  footer.footer {
-    justify-content: space-around;
-  }
-
-  .footer p {
-    margin-bottom: 1rem;
-  }
-
-  .social-media-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .social-media-container img {
-    margin-right: 0;
-  }
-}
-
-
 @media (max-width: 1250px) {
   div.episodes {
     width: 100%;
@@ -276,27 +295,5 @@ footer.footer {
 
   .episodes iframe {
     margin-bottom: 1.5rem;
-  }
-}
-
-@media (max-width: 653px) {
-  .episodes iframe {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0.5rem;
-  }
-  
-  .bg-blue-container {
-    padding-top: 4rem;
-    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
-  }
-
-  .novelties {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    clip-path: polygon(0 2rem, 100% 0, 100% 100%, 0 100%);
   }
 }

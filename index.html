@@ -5,22 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Podcast Chanel</title>
+  <title>Podcast Chanel - By Brian Bernal</title>
   <link rel="stylesheet" href="./styles/UI-elements.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/main-content.css">
 </head>
 
 <body>
+
   <header class="header">
     <img src="./images/logo.svg" class="logo" alt="Logo">
     <nav class="nav-list">
-      <a href="#">EPIDSODIOS</a>
-      <a href="#">NOSOTROS</a>
-      <a href="#">ENTREVISTAS</a>
-      <a href="#">TÓPICOS</a>
+      <a href="#episodes">EPIDSODIOS</a>
+      <a href="#about-us">NOSOTROS</a>
+      <a href="#interviews">ENTREVISTAS</a>
+      <a href="#topics">TÓPICOS</a>
     </nav>
   </header>
+
   <nav class="nav-mobile">
     <label for="hamburger-input">
       <input type="checkbox" id="hamburger-input" class="hamburger">
@@ -30,13 +32,14 @@
         <span class="line l-bottom"></span>
       </div>
       <div class="nav-list-mobile">
-        <a href="#">EPIDSODIOS</a>
-        <a href="#">NOSOTROS</a>
-        <a href="#">ENTREVISTAS</a>
-        <a href="#">TÓPICOS</a>
+        <a href="#episodes">EPIDSODIOS</a>
+        <a href="#about-us">NOSOTROS</a>
+        <a href="#interviews">ENTREVISTAS</a>
+        <a href="#topics">TÓPICOS</a>
       </div>
     </label>
   </nav>
+
   <section class="hello">
     <h1>Hello <span class="world">world</span> pale blue dot<span class="dot">.</span></h1>
     <p class="p-intro">
@@ -44,9 +47,12 @@
       <span class="mobile">Un podcast que explora el mundo de la programación.</span>
       Nuevos episodios, todos los jueves cada 15 días.
     </p>
-    <button class="main-button">CONOCÉ MÁS</button>
+    <a href="#about-us">
+      <button class="main-button">CONOCÉ MÁS</button>
+    </a>
   </section>
-  <div class="bg-blue-container">
+
+  <div class="bg-blue-container" id="episodes">
     <section>
       <h2 class="title-episodes">Episodios</h2>
       <div class="episodes">
@@ -61,8 +67,9 @@
       </div>
     </section>
   </div>
+
   <section class="where-section">
-    <img class="phone-image" src="./images/phone.png" height="519"
+    <img id="about-us" class="phone-image" src="./images/phone.png" height="519"
       alt="Phone news: The Secret History of Women in Coding">
     <article class="origin-article">
       <h2>De dónde venimos</h2>
@@ -81,7 +88,8 @@
       </p>
     </article>
   </section>
-  <section class="guests-section">
+
+  <section class="guests-section" id="interviews">
     <h2>Invitadas/os estelares</h2>
     <div class="super-women">
       <img src="./images/grace-hopper.png" alt="Grace Hopper">
@@ -94,7 +102,8 @@
       <img src="./images/susan-kare.png" alt="Susan Kare">
     </div>
   </section>
-  <section class="topics-section">
+
+  <section class="topics-section" id="topics">
     <h2>Algunos de nuestros temas</h2>
     <div class="sections-container">
       <div class="topic">
@@ -115,10 +124,14 @@
       </div>
     </div>
   </section>
+
   <section class="novelties bg-blue-container">
     <h2>¿Querés las últimas novedades?</h2>
-    <button>ESCUCHÁ LOS EPISODIOS</button>
+    <a href="#episodes">
+      <button>ESCUCHÁ LOS EPISODIOS</button>
+    </a>
   </section>
+
   <footer class="header footer">
     <p>© 2019- Hello blue pale dot</p>
     <div class="social-media-container">
@@ -129,6 +142,7 @@
       <img src="./images/telegram.svg" alt="telegram-logo" width="18">
     </div>
   </footer>
+
 </body>
 
 </html>

@@ -9,7 +9,6 @@
 }
 
 /* Mobile Menu */
-
 .logo {
   width: 36px;
   height: 36px;
@@ -114,6 +113,7 @@
 .nav-list-mobile a:active {
   background: #00F3BB;
 }
+/* End */
 
 @media screen and (max-width: 603px) {
   .header {
@@ -144,4 +144,8 @@
   }
 }
 
-/* End */
+@media (max-width: 1290px) {
+  header {
+    margin: 0 1rem;
+  }
+}

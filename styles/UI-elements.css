@@ -20,6 +20,10 @@
   --text-color-active: rgba(6,10,36,0.56);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 section, header, section, footer {
   max-width: 1000px;
   margin: 0 auto;
@@ -114,5 +118,6 @@ img {
     width: auto;
     min-height: 48px;
     font-size: 16px;
+    padding: 0 43px;
   }
 }
