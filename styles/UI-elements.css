@@ -1,3 +1,20 @@
+/* 
+  Este archivo tiene el propósito de ESTANDARIZAR
+  los UI-elements comunes a toda la aplicación tales como 
+  botones, font-family, hovers, paleta de colores etc. 
+  Es decir, aquí se configura el equivalente a el tema
+  de la página web. 
+
+  Para este propósito he usado type selectors con el fin
+  de tener una baja especificidad de manera que los 
+  elementos sean facilmente personalizables a traves de
+  class selectors los cuales tienen mas alta especificdad.
+
+  Este es el primer archivo  que se debe importar en el HTML
+  con el fin de establecer un efecto de cascada idoneo para
+  la herencia en la aplicación de estilos.
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
@@ -61,6 +78,7 @@ a {
 
 a:hover {
   color: var(--light-color);
+  text-decoration: line-through;
 }
 
 a:active {
@@ -93,11 +111,9 @@ img {
   max-width: 100%;
 }
 
-@media (max-width: 320px) {
-  button {
-    width: 95%;
-    max-width: 100%;
-    min-width: initial;
+@media (max-width: 1050px) {
+  section, footer {
+    margin: 0 1rem;
   }
 }
 
@@ -124,4 +140,9 @@ img {
     font-size: 16px;
     padding: 0 43px;
   }
+
+  section {
+    padding: 0;
+  }
+
 }

@@ -1,5 +1,16 @@
+/* 
+  Este archivo contiene el CSS correspondiente a las secciones
+  de la página web (EXCEPTO el header). Vale aclarar que los
+  elementos afectados en este archivo, tienen heredados los estilos 
+  del archivo UI-elements. La idea aquí es personalizar detalladamente
+  los elementos y secciones acorde con el diseño proporcionado.
+
+  Los estilos estan dividos con comentarios que indican
+  el inicio y el fin de cada sección.
+*/
+
 /* First Section */
-section.hello {
+.hello-section {
   margin-top: 9rem;
   margin-bottom: 5px;
 }
@@ -40,7 +51,7 @@ section.hello {
   margin-bottom: 2rem;
 }
 
-div.episodes {
+.episodes-container {
   width: calc(100% + 240px);
   transform: translateX(-120px);
   display: flex;
@@ -48,7 +59,7 @@ div.episodes {
   flex-wrap: wrap;
 }
 
-.episodes iframe {
+.iframe {
   max-width: 584px;
   width: 48%;
   display: inline-block;
@@ -57,7 +68,7 @@ div.episodes {
 /* End */
 
 /* Third Section */
-section.where-section {
+.where-section {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -75,14 +86,14 @@ section.where-section {
 /* End */
 
 /* Fourth section */
-section.guests-section {
+.guests-section {
   max-width: none;
   width: 100%;
   margin: 0;
   transform: translateY(-7rem);
 }
 
-.guests-section h2 {
+.guests-title {
   width: auto;
   max-width: 1000px;
   margin-left: auto;
@@ -91,24 +102,24 @@ section.guests-section {
   margin-top: 0;
 }
 
-.super-women {
+.super-women-container {
   display: flex;
   flex-wrap: wrap;
 }
 
-.super-women img {
+.super-women-container img {
   width: 33.33%;
 }
 /* End */
 
 /* Fifth section */
-section.topics-section h2 {
+.topics-title {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   transform: translateY(-2rem);
 }
 
-.sections-container {
+.topics-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -119,10 +130,10 @@ section.topics-section h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-.topic h3 {
+.topic-text {
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -130,7 +141,7 @@ section.topics-section h2 {
 /* End */
 
 /* Sixth section */
-.novelties {
+.novelties-section {
   padding-bottom: 8rem;
   display: flex;
   flex-direction: column;
@@ -139,28 +150,28 @@ section.topics-section h2 {
   clip-path: polygon(0 9rem, 100% 0, 100% 100%, 0 100%);
 }
 
-.novelties h2 {
+.novelties-title {
   color: var(--second-color);
   font-weight: 400;
-  margin: 2rem 0;
+  margin: 2rem 1rem;
 }
 
-.novelties button {
+.novelties-button {
   margin: 0 16px;
 }
 /* End */
 
 /* Footer */
-footer.footer {
+.footer {
   padding: 2.5rem 0;
   flex-wrap: wrap;
 }
 
-.footer p {
+.footer-copyright-text {
   margin: 0;
 }
 
-.footer .social-link {
+.social-link {
   margin-right: 1.3rem;
   display: inline-block;
 }
@@ -169,55 +180,50 @@ footer.footer {
   width: 18px;
 }
 
-.social-media-container .social-link:last-child {
+.social-link:last-child {
   margin-right: 0;
 }
 /* End */
 
 @media (max-width: 1250px) {
+  .episodes-container {
+    width: 100%;
+    transform: initial;
+  }
+
+  .iframe {
+    margin-bottom: 1.5rem;
+  }
+
   .phone-image {
     height: 519px;
     transform: translateY(-7rem);
   }
 
-  section.guests-section {
+  .guests-section {
     transform: translateY(-4rem);
   }
 
-  section.topics-section h2 {
+  .topics-title {
     margin-top: 0;
     transform: translateY(-1rem);
   }
 }
 
-@media (max-width: 1250px) {
-  div.episodes {
-    width: 100%;
-    transform: initial;
-  }
-
-  .episodes iframe {
-    margin-bottom: 1.5rem;
-  }
-}
-
 @media (max-width: 1050px) {
-  section, section, footer {
-    margin: 0 1rem;
-  }
-
-  .guests-section h2 {
+  .guests-title {
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: 14px;
   }
 }
 
 @media (max-width: 1000px) {
-  .super-women img {
+  .super-women-container img {
     width: 50vw;
   }
 
-  .sections-container {
+  .topics-container {
     justify-content: space-around;
   }
 }
@@ -234,19 +240,19 @@ footer.footer {
 }
 
 @media (max-width: 653px) {
-  .episodes iframe {
+  .iframe {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
   }
   
   .bg-blue-container {
-    padding-top: 4rem;
-    clip-path: polygon(0 2rem, 100% 0, 100% calc(100% - 2rem), 0 100%);
+    padding-top: 3.5rem;
+    clip-path: polygon(0 2.5rem, 100% 0, 100% calc(100% - 2.5rem), 0 100%);
   }
 
-  .novelties {
+  .novelties-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,11 +262,7 @@ footer.footer {
 }
 
 @media (max-width: 603px){
-  section {
-    padding: 0;
-  }
-
-  section.hello {
+  .hello-section {
     margin-top: 2rem;
     margin-bottom: 1.5rem;
   }
@@ -276,28 +278,46 @@ footer.footer {
   .dot {
     color: inherit;
   }
+
+  .novelties-section {
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+  }
 }
 
-@media (max-width: 500px) {
-  .super-women img {
+@media (max-width: 475px) {
+  .main-button {
+    width: 100%;
+  }
+  
+  .super-women-container img {
     width: 100vw;
   }
 
-  footer.footer {
+  .topics-container {
+    flex-direction: column;
+  }
+
+  .topic {
+    width: auto;
+    margin-bottom: 42px;
+  }
+
+  .footer {
     justify-content: space-around;
   }
 
-  .footer p {
+  .footer-copyright-text {
     margin-bottom: 1rem;
   }
 
   .social-media-container {
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .social-media-container .social-link {
+  .social-link {
     margin-right: 0;
   }
 }
