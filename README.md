@@ -1,5 +1,7 @@
 # Podcast Chanel
 
+A podcast page with just Html, CSS and Iframes. This is part of React Acamica course.
+
 ## 🚀 Quick start
 
 1.  **Run the app locally.**
